@@ -1,0 +1,182 @@
+*/ *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    radial-gradient(500px 300px at 15% 20%, rgba(34,211,238,0.25), transparent 60%),
+    radial-gradient(400px 300px at 85% 80%, rgba(99,102,241,0.22), transparent 65%),
+    linear-gradient(180deg, #020617, #030712);
+
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.auth-card {
+  width: 480px;
+  padding: 56px 50px;
+  background: linear-gradient(180deg, #0f172a, #020617);
+  border-radius: 26px;
+  border: 1px solid rgba(255,255,255,0.08);
+  overflow: hidden;
+
+  box-shadow:
+    0 40px 100px rgba(0,0,0,0.85),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+
+  color: #e5e7eb;
+  text-align: center;
+}
+
+.auth-card h2 {
+  font-size: 30px;
+  margin-bottom: 34px;
+  font-weight: 600;
+  /* color: #e0f2fe; */
+  color:  #faa536;
+}
+
+.error-text {
+  color: #fb7185;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.auth-card input,
+.auth-card select {
+  width: 100%;
+  padding: 16px 18px;
+  background: #020617;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #f8fafc;
+  font-size: 15px;
+  transition: all 0.25s ease;
+}
+
+.auth-card > input,
+.auth-card > select,
+.password-field {
+  margin-bottom: 20px;
+}
+
+.auth-card input::placeholder {
+  color: #94a3b8;
+}
+
+.auth-card input:focus,
+.auth-card select:focus {
+  outline: none;
+  border-color: #22d3ee;
+  box-shadow:
+    0 0 0 1px rgba(34,211,238,0.6),
+    0 0 25px rgba(34,211,238,0.25);
+}
+
+.auth-card select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+
+  background-image:
+    linear-gradient(45deg, transparent 50%, #22d3ee 50%),
+    linear-gradient(135deg, #22d3ee 50%, transparent 50%);
+  background-position:
+    calc(100% - 20px) 50%,
+    calc(100% - 14px) 50%;
+  background-size: 6px 6px;
+  background-repeat: no-repeat;
+}
+
+.auth-card select:invalid {
+  color: #94a3b8;
+}
+
+.auth-card select option {
+  background: #020617;
+  color: #f8fafc;
+}
+
+.auth-card input[type="date"] {
+  cursor: pointer;
+}
+
+.auth-card input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(70%) sepia(30%) saturate(500%) hue-rotate(150deg);
+  opacity: 0.9;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  padding-right: 48px;
+}
+
+.toggle-eye {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  opacity: 0.65;
+  transition: opacity 0.2s ease;
+}
+
+.toggle-eye:hover {
+  opacity: 1;
+}
+
+.auth-card button {
+  width: 100%;
+  padding: 16px;
+  margin-top: 8px;
+  border-radius: 34px;
+  border: none;
+
+  background: linear-gradient(135deg, #22d3ee, #38bdf8);
+  color: #020617;
+
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: all 0.18s ease;
+}
+
+.auth-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(34,211,238,0.45);
+}
+
+.auth-switch {
+  margin-top: 22px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.auth-switch a {
+  color: #22d3ee;
+  text-decoration: none;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+} 
+
+.field-error {
+  color: #ef4444;
+  font-size: 13px;
+  margin-top: -12px;
+  margin-bottom: 14px;
+}
+

@@ -1,0 +1,75 @@
+.footer {
+  background:
+    radial-gradient(500px 200px at top, rgba(32,242,231,0.12), transparent 60%),
+    linear-gradient(180deg, #000, #050505);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 70px 8% 24px;
+  color: #e5e7eb;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 48px;
+}
+
+/* BRAND */
+.footer-brand h2 {
+  color: aqua;
+  font-size: 32px;   /* ⬆️ was 28px */
+  font-weight: 700;
+}
+
+.footer-brand .dot {
+  color: aqua;
+  font-size: 32px;
+  margin-right: 6px;
+}
+
+.footer-brand p {
+  margin-top: 14px;
+  color: #aaa;
+  font-size: 16px;   /* ⬆️ was 14px */
+  line-height: 1.7;
+}
+
+/* LINKS & CONTACT HEADINGS */
+.footer-links h4,
+.footer-contact h4 {
+  color: #f5c77a;
+  font-size: 20px;   /* ⬆️ was 18px */
+  margin-bottom: 18px;
+}
+
+/* LINKS */
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 12px;
+  font-size: 16px;   /* ⬆️ was 14px */
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: aqua;
+  transform: translateX(6px);
+}
+
+/* CONTACT TEXT */
+.footer-contact p {
+  font-size: 16px;   /* ⬆️ was 14px */
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+/* BOTTOM BAR */
+.footer-bottom {
+  margin-top: 48px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  text-align: center;
+  font-size: 14px;   /* ⬆️ was 13px */
+  color: #888;
+}

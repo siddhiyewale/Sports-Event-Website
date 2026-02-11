@@ -1,0 +1,44 @@
+/* ===== LIGHT MODE ===== */
+body[data-theme="light"] .navbar {
+  background: linear-gradient(180deg, #ffffff, #f3f3f3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body[data-theme="light"] .nav-right a {
+  color: #222;
+}
+
+body[data-theme="light"] .nav-right a:hover {
+  color: #ff8c42;
+}
+
+body[data-theme="light"] .logo-text {
+  color: #ff8c42;
+}
+
+body[data-theme="light"] .hamburger span {
+  background: #333;
+}
+
+body[data-theme="light"] .logout-btn {
+  border-color: #ff8c42;
+  color: #ff8c42;
+}
+
+body[data-theme="light"] .logout-btn:hover {
+  background: #ff8c42;
+  color: #fff;
+}
+
+
+ body {
+  margin: 0;
+  background: white;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+p, a, span, button {
+  font-size: 20px;
+}
+

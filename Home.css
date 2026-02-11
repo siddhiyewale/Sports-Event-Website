@@ -1,0 +1,278 @@
+.home {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  /* background: radial-gradient(circle at top, #0f0f0f, #000); */
+  background: linear-gradient(
+    180deg,
+    #05080c,
+    #0b0f14,
+    #101820
+  );
+}
+
+
+.hero {
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  filter: brightness(0.5);
+  animation: slideBg 20s infinite;
+}
+
+@keyframes slideBg {
+  0% { background-image: url("/public/images/cycle.jpg"); }
+  25% { background-image: url("/public/images/hero-bg.jpg"); }
+  50% { background-image: url("/public/images/marathon-hero.jpg"); }
+  75% { background-image: url("/public/images/run.jpeg"); }
+  100% { background-image: url("/public/images/trek.jpg"); }
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.hero-overlay h1 {
+  font-size: 60px;
+  max-width: 700px;
+  background: linear-gradient(90deg, #f6d365, #fda085);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.hero-overlay p {
+  font-size: 20px;
+  opacity: 0.85;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.hero-btn {
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  border: none;
+  color: #000;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(246, 211, 101, 0.5);
+}
+
+.search-section {
+  padding: 40px 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-section input {
+  width: 60%;
+  padding: 14px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.discover {
+  padding: 80px;
+}
+
+.discover h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.discover-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.sport-card {
+  height: 230px;
+  border-radius: 16px;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sport-card::after {
+  content: "Explore →";
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sport-card:hover::after {
+  opacity: 1;
+}
+
+.sport-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.running { background-image: url("/public/images/hero-bg.jpg"); }
+.cycling { background-image: url("/public/images/cycle.jpg"); }
+.triathlon { background-image: url("/public/images/tri.png"); }
+.trekking { background-image: url("/public/images/trek.jpg"); }
+
+
+.events {
+  padding: 80px;
+}
+
+.events h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  background: linear-gradient(to right, #f6d365, #fda085);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.event-card {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  max-height: 500px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.event-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.event-info h4 {
+  color: #111 !important;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.event-info p {
+  color: #555 !important;
+  font-size: 16px;
+  margin: 0;
+}
+
+.event-info span {
+  color: #333 !important;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.view-btn,
+.register-btn,
+.wishlist-btn {
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  color: #000;
+  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view-btn:hover,
+.register-btn:hover,
+.wishlist-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(246, 211, 101, 0.5);
+}
+
+
+.why {
+  padding: 80px;
+  background: #111;
+}
+
+.why h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.why-card {
+  background: linear-gradient(145deg, #1c1c1c, #0f0f0f);
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,80 @@
+/* ================= GLOBAL BACKGROUND (FORCE APPLY) ================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(0, 255, 255, 0.18),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(255, 165, 0, 0.18),
+      transparent 40%
+    ),
+    linear-gradient(
+      180deg,
+      #0f172a 0%,
+      #020617 50%,
+      #020617 100%
+    );
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* IMPORTANT: remove solid black blockers */
+#root {
+  min-height: 100vh;
+  background: transparent !important;
+}
+
+/* ===== DARK MODE ===== */
+body.dark {
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+/* ===== LIGHT MODE ===== */
+body.light {
+  background-color: #f6f6f6;
+  color: #111;
+}
+
+/* OPTIONAL: common cards */
+body.light .event-card,
+body.light .card,
+body.light .modal-box {
+  background: #ffffff;
+  color: #111;
+}
+
+
+/* ===== GLOBAL THEME ===== */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* DARK MODE */
+body.dark {
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+/* LIGHT MODE */
+body.light {
+  background-color: #f5f5f5;
+  color: #111111;
+}
+
+/* TEXT */
+body.light p,
+body.light span,
+body.light h1,
+body.light h2,
+body.light h3,
+body.light h4 {
+  color: #111;
+}

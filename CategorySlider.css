@@ -1,0 +1,75 @@
+ .category-slider-section {
+  padding: 70px;
+  background: #0b0f14;
+}
+
+.category-slider-section h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: aqua;
+  margin-bottom: 30px;
+}
+
+.category-slider {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.category-slider::-webkit-scrollbar {
+  height: 6px;
+}
+
+.category-slider::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+.category-card {
+  min-width: 260px;
+  height: 320px;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background: #000;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0, 255, 255, 0.25);
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.2)
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+
+.category-overlay span {
+  font-size: 24px;   
+  font-weight: 600;
+  color: #ffffff;
+} 
+
+.category-slider-section h2 {
+  color: #eab065;
+}
+

@@ -1,0 +1,169 @@
+/* .modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: #0b0b0b;
+  padding: 30px;
+  border-radius: 18px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.modal-box input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+.modal-box button {
+  padding: 12px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.close-btn {
+  background: transparent;
+  color: #aaa;
+} */
+
+
+
+/* OVERLAY */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* MODAL */
+.register-modal {
+  width: 420px;
+  background: #0f0f0f;
+  border-radius: 18px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 60px rgba(0, 255, 255, 0.25);
+  color: #fff;
+}
+
+.register-modal h2 {
+  color: aqua;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.event-meta {
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 24px;
+}
+
+/* FORM */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* INPUT WITH ICON */
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.input-group svg {
+  color: aqua;
+  font-size: 16px;
+}
+
+.input-group input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 100%;
+  font-size: 15px;
+}
+
+/* ROW */
+.row {
+  display: flex;
+  gap: 12px;
+}
+
+.row input,
+.row select {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 15px;
+}
+
+.row select {
+  background-color: #111;
+}
+
+/* BUTTONS */
+.submit-btn {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, aqua, #00b3b3);
+  border: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  box-shadow: 0 0 28px rgba(0, 255, 255, 0.6);
+}
+
+.cancel-btn {
+  background: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.cancel-btn:hover {
+  color: #fff;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .register-modal {
+    width: 92%;
+  }
+}
+.event-time {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #ccc;
+}

@@ -1,0 +1,191 @@
+
+:root {
+  --aqua: #20f2e7;
+  --gold: #f5c77a;
+  --orange: #ff9f43;
+  --dark-bg: #050505;
+  --card-bg: rgba(255, 255, 255, 0.06);
+}
+
+/* ===== PAGE ===== */
+.user-dashboard {
+  min-height: 100vh;
+  padding: 80px 6%;
+  background:
+    radial-gradient(600px 300px at top, rgba(32,242,231,0.12), transparent 60%),
+    radial-gradient(500px 300px at bottom right, rgba(255,159,67,0.12), transparent 60%),
+    linear-gradient(180deg, #000, var(--dark-bg));
+  color: #e5e7eb;
+  font-family: "Poppins", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== HEADER ===== */
+.user-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.user-header h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--aqua);
+  letter-spacing: 0.6px;
+}
+
+.user-header p {
+  color: #aaa;
+  margin-top: 6px;
+  font-size: 15px;
+}
+
+/* ===== TEXT HIGHLIGHTS ===== */
+.gold-text {
+  color: var(--gold);
+}
+
+.orange-text {
+  color: var(--orange);
+}
+
+/* ===== ACTION BUTTONS ===== */
+.user-actions {
+  margin-top: 25px;
+  display: flex;
+  gap: 18px;
+}
+
+.user-actions button {
+  padding: 12px 30px;
+  border-radius: 32px;
+  background: transparent;
+  border: 1px solid var(--aqua);
+  color: var(--aqua);
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* aqua glow hover */
+.user-actions button:hover {
+  background: linear-gradient(135deg, var(--aqua), #6ffff6);
+  color: #020617;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 35px rgba(32,242,231,0.45);
+}
+
+/* LOGOUT */
+.logout-btn {
+  border-color: var(--orange) !important;
+  color: var(--orange) !important;
+}
+
+.logout-btn:hover {
+  background: linear-gradient(135deg, var(--orange), var(--gold)) !important;
+  color: #020617 !important;
+  box-shadow: 0 14px 35px rgba(255,159,67,0.45);
+}
+
+/* ===== TABS ===== */
+.user-tabs {
+  margin-top: 50px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+
+.user-tabs button {
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: transparent;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* tab hover */
+.user-tabs button:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  transform: translateY(-2px);
+}
+
+/* active tab */
+.user-tabs button.active {
+  background: linear-gradient(135deg, var(--gold), var(--orange));
+  color: #020617;
+  border-color: transparent;
+  box-shadow: 0 12px 30px rgba(255,159,67,0.45);
+}
+
+/* ===== CONTENT ===== */
+.user-section {
+  margin-top: 45px;
+  width: 100%;
+  max-width: 900px;
+  align-items: center;   
+
+}
+
+.section-title {
+  color: var(--gold);
+  margin-bottom: 14px;
+  font-size: 26px;
+  letter-spacing: 0.4px;
+  transition: letter-spacing 0.3s ease;
+  text-align: center;
+}
+
+.section-title:hover {
+  letter-spacing: 1px;
+}
+
+.empty-text {
+  color: #888;
+  font-size: 15px;
+}
+
+/* ===== PROFILE CARD ===== */
+.profile-card {
+  margin-top: 22px;
+  padding: 32px;
+  max-width: 520px;
+  border-radius: 22px;
+  background: var(--card-bg);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 25px 55px rgba(0,0,0,0.7);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.profile-row:last-child {
+  border-bottom: none;
+}
+
+/* Label */
+.profile-row span:first-child {
+  color: #aaa;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* VALUE – CENTERED */
+.profile-row span:last-child {
+  text-align: center;
+  font-weight: 500;
+}
